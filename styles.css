@@ -157,6 +157,7 @@
     align-items: center;
     text-align: center; 
     padding: 30px;
+    font-style: italic;
 }
 .contact {
     background-color: #000000;  
@@ -202,9 +203,14 @@
     .text, .paragraph {
         font-size: 4vw; 
     }
+
+    .video .title {
+        font-size: 5vw;    
+    }
+
     .navbar-nav .nav-link {
         text-align: center;
-        padding: 0.7rem;
+        padding: 0.5rem;
         font-size: 0.9rem;
     }
     .logo {
