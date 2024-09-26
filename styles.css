@@ -1,0 +1,227 @@
+.header {
+    width: 100%;
+    background-color: #D9D9D9;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.main-cover {
+    padding-top: 70px; 
+    position: relative; 
+    margin-bottom: 25px;
+}
+
+
+.buy-now-btn {
+    position: absolute;
+    bottom: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 20px; 
+    background: white; 
+    color: black; 
+    border: 2px solid black; 
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem; 
+    transition: background 0.3s, color 0.3s; 
+}
+.buy-now-btn:hover {
+    background: rgb(111, 195, 128); 
+    color: rgb(0, 0, 0); 
+}
+
+
+.navbar-nav .nav-link {
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: #6f6e69;
+}
+.feature-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Left side content */
+.left-side {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+/* Right side content */
+.right-side {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text {
+    font-size: 2vw; 
+    line-height: 1.5;
+    text-align: center; 
+    margin: 0; 
+}
+
+.paragraph {
+    font-size: 1.5vw; 
+    line-height: 1.4;
+    text-align: center; 
+    margin: 0; 
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    max-width: 400px; 
+}
+
+.specs {
+    display: flex;                      
+    justify-content: center;          
+    align-items: center;               
+    margin: 40px 0;                    
+    width: 100%;                      
+}
+
+.full-specs-btn {
+    padding: 0 20px;               
+    background: white;                
+    color: black;                     
+    border: 2px solid black;         
+    border-radius: 25px;             
+    text-decoration: none;               
+    font-size: 1rem;                   
+    transition: background 0.3s, color 0.3s; 
+    cursor: pointer;                   
+}
+
+.full-specs-btn:hover {
+    background: rgb(111, 195, 128);     
+    color: rgb(0, 0, 0);                
+}
+
+.video .title {
+    font-size: 4vw;                         
+    margin-bottom: 10px;                   
+    text-align: center;                    
+    font-weight: bold;                     
+}
+
+.video {
+    display: flex;                        
+    flex-direction: column;              
+    justify-content: center;               
+    align-items: center;                  
+    margin: 20px 0;                       
+    width: 100%;                          
+    padding: 0 15px;                      
+}
+
+.video iframe {
+    width: 100%;                         
+    height: auto;                        
+    aspect-ratio: 16 / 9;                
+    max-width: 1050px;                 
+}
+
+.contact {
+    background-color: #000000;  
+    padding: 10px 0;            
+    text-align: center;          
+    font-family: Arial, sans-serif;
+    font-size: 0.80rem;         
+    color: #ffffff;                
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;                  
+}
+
+.contact-content a {
+    color: #0073e6;          
+    text-decoration: none;     
+    font-size: 0.80rem;         
+}
+
+.contact-content a:hover {
+    text-decoration: underline; 
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .buy-now-btn {
+        padding: 8px 16px; 
+        font-size: 0.9rem; 
+    }
+    .feature-container {
+        flex-direction: column; 
+        padding: 20px; 
+        
+    }
+
+    .photo {
+        max-width: 300px; 
+    }
+
+    .text, .paragraph {
+        font-size: 4vw; 
+    }
+    .navbar-nav .nav-link {
+        text-align: center;
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+    .logo {
+        width: 40px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .buy-now-btn {
+        padding: 3px 12px; 
+        font-size: 0.8rem; 
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
