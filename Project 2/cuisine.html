@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="project2.css" />
+    <title>Cuisine and Dining</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwN-hen-Vl6DvjGJACfnx1lEcNuJGQmm5LhTFQzX8qwsH_qt3Cz7RFITmIq-oPWXbAVddEPr0Io8Py8mZ4Gzk0-36g87CJob4HBUNq66ugKCy5js_VmDvI81aHWoiBKIV9IbKLL2ncGXeoaBf8hoVKoaR3DUBgyPNW5dWzsCXpqsQRKdp39DsnfD0kAQE/s784/ircle.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+    <div class="text-bg-dark collapse" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>About</h4>
+              <p class="text-body-secondary-white">
+                Savor the delicious food that Paris has to offer. You can enjoy fresh pastries, tasty cheese, and classic dishes like croissants and baguettes. From cozy cafes to fancy restaurants, there’s something for everyone to taste and enjoy in the city.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>Paris, France</h4>
+              <ul class="list-unstyled">
+                <li><a href="../Project%202/landmark.html" target="blank" class="text-white">Landmarks</a></li>
+                <li><a href="../Project%202/park.html"  target="blank" class="text-white">Park and Gardens</a></li>
+                <li><a href="../Project%202/travel.html" target="blank" class="text-white">Travel Tips</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5M2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175"/>
+                <path d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8"/>
+              </svg>
+            <strong>&nbsp;Cuisine and Dining</strong>
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Cuisine and Dining Full Image Display -->
+      
+      <div id="cuisine" class="carousel slide p-0" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.agoda.com/wp-content/uploads/2019/04/Best-restaurants-in-Paris-full-course-meal.jpg" class="d-block w-100" alt="cuisine">
+          </div>
+          <div class="carousel-item">
+            <img src="https://parisboutik.com/wp-content/uploads/2017/05/epicerie-bastille-51.jpg" class="d-block w-100" alt="cuisine">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.getflavor.com/wp-content/uploads/2019/01/4-Taureaux-Spread.jpg" class="d-block w-100" alt="cuisine">
+          </div>
+        </div>
+      </div>
+
+      <!-- Cuisine Row 1 -->
+
+      <div class="cuisine container-fluid px-5 mb-5">
+        <div class="row my-4">
+            <h1 class="text-center mt-4 mb-4 playfair-font display-5">Savor Paris: A Taste of the City’s Culinary Delights</h1>
+        
+            <!-- Cuisine 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-2">
+                <div class="card p-3 mx-auto">
+                    <div id="cuisine1" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#cuisine1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#cuisine1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#cuisine1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4YdzMwZcnHdW84Y__CXlGSVUOlfS5SxMH2VbkBfwfBsshuQhs7M46Xq9tV2dBHdFB1MomWy99ii10ze3ACtB-EJuhykdcp9YepCg6dUI4KlEboBBxhQp_VysIFVqTbWXH_89M5CRB0w3hLT7UQZQ_oDsCsMqW26EckyBAVVou2UqC3xmNguKoqAlpG0Y/s320/Croissants.png" class="d-block w-100" alt="cuisine1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinC3wapLUb1cdMJWGCz3r9Viw8LZaqFbUJ9mLX9KEbjfTyS6EEt1-BvW68mVI5TIW5B6hq_yKn3w9Aw1ecuq0io4D21WFCFkVVje0U4YUUfNvZ6gDiFgblwltPmSRtlaHNaJQii2xecGX5T-K0wtHp7G9XkDygzfG9uJHjgLnA30o0XXZ8h1EcmNmpSfg/s320/Croissants%20(3).png" class="d-block w-100" alt="cuisine1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrGb3jNlt4OUgqSa8qocGnbSYJjGNCUECHI7FJ67126nOk2Fb1n9igHQAY77dGBgBr5NPqmQRy8RvogyGQUVkeWz8cYiHMOk_DXu5HtCyvaq0shL7IeZAES89l-IScM9R1lljXWpqoo8G6rgJ3_jMnJhaBbPvVkWNMZiVgfyHxHbPkMtZcj4GHgBjMRGM/s320/Croissants%20(2).png" class="d-block w-100" alt="cuisine1">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#cuisine1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#cuisine1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    <div class="card-body p-0 pt-3">
+                        <h5 class="card-title">Croissants</h5>
+                      <p class="card-text text-justify">Croissants are flaky, buttery pastries that are a delicious breakfast staple in France, often enjoyed with coffee.</p>
+                      <div class="rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star" viewBox="0 0 16 16">
+                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- Cuisine1 2 -->
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-2">
+            <div class="card p-3 mx-auto" >
+                <div id="cuisine2" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#cuisine2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#cuisine2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#cuisine2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcoJWswfEozJXjje9XrOReT_BR3wAWWrArzCXg4KuQu8D5me8_QV8hiUpdgBxDkcPiEgnLC8kgE7lo2wbUnueangBnDBxT83HCMxZ29zwfR_Y72icwb4agsVJ0LrsZ8a3AUbpWbVydyebZ_sbYxniFzHKuglSp7NIP_fPJevAMadftTrLdruZ4kWw8aWk/s320/Baguettes%20(3).png" class="d-block w-100" alt="cuisine2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp20S-BP6XPc6Zv3MlOziIdx2gB4R3Rs8EYX35DyY6JArLyNQ85yowH992sUJ7E4rq6IrRsH_Jv2gkd7qt9DgitgCpYkSYdFz0tenLoNCfZvnmYePZWOChnrYk4G3-KcpPzlHpm_5d5d1WMrXqw220gviQtJYJF0aqq2yV_h8jy3wazxy6tvYlecfx2ac/s1920/Baguettes%20(2).png" class="d-block w-100" alt="cuisine2">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-d-iqtdY84t4JeqCdDdvJHybeLawpyxsHoFGIEH_RrN6BRTX0yInV2TLQmDdAwnBz6i_7n4j3vZks53XhjT2dHtO628iQKv5pBqNY5qPSRPgPDpmbRThx-vctArS22e5s5qU8FrVSTE-_pu0KEcsBj_7N4GOS_fOe1RYA7CzsPjwbmXBmcBsiDIs8vZI/s320/Baguettes.png" class="d-block w-100" alt="cuisine2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cuisine2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cuisine2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="card-body p-0 pt-3">
+                    <h5 class="card-title">Baguettes</h5>
+                  <p class="card-text text-justify">Baguettes are long, crusty loaves of bread, perfect for sandwiches or enjoyed with cheese and wine.</p>
+                  <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Cuisine 3 -->
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-2">
+            <div class="card p-3 mx-auto">
+                <div id="cuisine3" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#cuisine3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#cuisine3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#cuisine3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwCmIHiUwrMEDY_iCtO1YwXLbTKe47g0hHhyQF0wvBSmaDi34kaRY5wtkuJj0X_E8HlAOU9g6V8f1GczI4irks_dVHjW4kd5b09PxDHfCYOd_gbuZibUd4MLpb5Z6Rk_x9SaP2v5vk_scRdpE7nKdQ-NnKwW7gofktFQui61OSy_6PDQmu-2asiEV1mAE/s320/Macarons.png" class="d-block w-100" alt="cuisine3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs2ILAr57ueSkNQJ7LA1v4j-rIN2c739NHkkm7xrOTPoejzKU5pIIdVzUjXLkuFOt79E6t3AWp6eH_kTebmaipxLg3XThr_aKHwrV5vn2CmVsTzjKvUx6DyNZchpIUVri69T1RkSl0rJK1Fc6FcdbmE_rJeOiWbBIsIND6Qlx1kzfprR5PIvJv0AM3ZaY/s320/Macarons%20(3).png" class="d-block w-100" alt="cuisine3">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipGvQjauvi2CaRgyAcQD0iXx2dE60yPA3nLYBl7zj_jHu6GKVbfkFpl_to0BtM5flCp3tYbO01jt4xHxsvFAZaCX2MEYyxTCGDhVSiJL4RsObXqsaK0e9n3hotdYmMW8jFuGbznJTCufDxF4wXh48AnaHT8xLJwOC0NOpp2otdEjyqXSWioMz-rfysJaY/s320/Macarons%20(2).png" class="d-block w-100" alt="cuisine3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cuisine3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cuisine3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="card-body p-0 pt-3">
+                    <h5 class="card-title">Macarons</h5>
+                  <p class="card-text text-justify">Macarons are colorful, delicate cookies filled with cream, offering a sweet and chewy treat in various flavors.</p>
+                  <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-half" viewBox="0 0 16 16">
+                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                      </svg>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Cuisine 4 -->
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-2">
+            <div class="card p-3 mx-auto">
+                <div id="cuisine4" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#cuisine4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#cuisine4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#cuisine4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiRrkg8lenIP2n2kD44870BIoILfpzhoB1Dxe6ewUIFsydMuN9eO9y2Px3UdxmSNMJlY6SuBC90b6alLnADwM8BREdPWwJIr1CoZq8mA38tUJPv2GXXGSlD5KChs77TZ8D72TOuQBbVbl1z1ucY3UAtEdJ-Tv49F0cl4_tT7vKZfYM5gh1CYlFIb85C_I/s320/73.png" class="d-block w-100" alt="cuisine4">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNoHsuOqlpURApc8pyyXyqV2a6S-iLJjMqWTGSrKiAt5QIIL9gRuk-QRNlpoHlBZRZ6Tx8hgVrsj7ho5DvoPqbx8Gw3adWg0U8Z85jXW0eCB6c21QNfBiCNrphQIhXJePZsYok2w4WaqJr-80V7HZdeicjZ6sblWg-kZMInk_aZj9xJY2uKxltjgfGxXE/s320/74.png" class="d-block w-100" alt="cuisine4">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBvSrtpZdAkUb4YRQUEPf6yX4b064nvsOAhO6KG4FRKsIgapJtCyRQQVLY8BKuBOa4_DY8gXOEOYlD4qH3pbIjipyff9rcEbQMrG2rEy6bucHfH61TyrLByFwVa0zBhLaV69W8hRIwzkmR7j0Cr_K_TctvGxYGlX_wt4oo4WfzO2lfR3K6yNZy3GayDNw/s320/75.png" class="d-block w-100" alt="cuisine4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cuisine4" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cuisine4" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="card-body p-0 pt-3">
+                    <h5 class="card-title">Escargots</h5>
+                  <p class="card-text text-justify">Escargots are snails prepared in garlic butter, a classic French delicacy that many adventurous diners enjoy.</p>
+                  <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-half" viewBox="0 0 16 16">
+                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+        
+        <!-- Cuisine Row 2 -->
+
+    <div class="row my-2">
+
+        <!-- Cuisine 5 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-2">
+            <div class="card p-3">
+                <div id="cuisine5" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#cuisine5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#cuisine5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#cuisine5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8AFS-rgRddW1GJFILR0GoYI7XplhccML8dFWbUEyXYzKVdtpG0SZiHfEe749r8jiaI9IWgPyqXfA6xXS4PdI8xpGZdA5rM76tN_A6WX6rznBmaYiHTaDSxRIZwADv5I65ZDxK0X2WSq-9sN69P9Tq3Lixxo8Ryz-yVcMRC42XIo3UZtWFd94AMrrGH2U/s320/Caf%C3%A9_de_Flore%20(3).png" class="d-block w-100" alt="cuisine5">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7aaer75_dOxsAW9f1myvh56R1eKHVi2lMPw0RiaJ_HGVKM-0v7UgplEKfxPy_l6rpbkrc5cEADEJGIU3b2YsIO34FPViN4UAhz-LFkaZ8N89suGbE3TEScODFXhvczKXYzAr-s6GgGhtXc_Xyq1JpwOegSsfQeOX19PsNwCgIr47GBUdd9TMpEgZO0HM/s320/Caf%C3%A9_de_Flore.png" class="d-block w-100" alt="cuisine5">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXOFzoGdcTgE90uCDP6b7N6lKRUuRH4zbaJmW9CNUXTp3ol9dOzyetCOYdAJBYoXBOsfAsmpLIaxBBLa8CudSJ4Jk3ckNenZnUbKOSdf2tTA3Y7pE_5Ah_0FN4OoFcg4pOcAvGAUnfxv06AWzblfLLtjQfq0y0X-Nfe249fOz-vI9ycXydNQxUdgXUI9I/s320/Caf%C3%A9_de_Flore%20(2).png" class="d-block w-100" alt="cuisine5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cuisine5" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cuisine5" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="card-body p-0 pt-3">
+                    <h5 class="card-title">Café de Flore</h5>
+                  <p class="card-text text-justify">Café de Flore is a historic café in Saint-Germain, famous for its literary history and outdoor seating.</p>
+                  <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!-- Cuisine 6 -->
+  
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-2">
+        <div class="card p-3 mx-auto">
+            <div id="cuisine6" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#cuisine6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#cuisine6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#cuisine6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpVfr3hhcHUBBYjrSBx-a3c0h6Hv4IB1jG3wIXPF-u7J0aZK5OZRZqx-8Ic15oTRoGNrbvDhWDelzmQRl4phsf9Grsc5uF-k8AKdgIAU5e7QyLArVY3uIu7sDFnjI8fPA1qfRjftauJTUvq18yFQXKPfuFlj8Nl88L32VFOAsCHka0NGuR82G2jy1gQ0o/s320/Les_Deux_Magots.png" class="d-block w-100" alt="cuisine6">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2AOoIbv-ylt2RgkUrtl0l4MXJgM8esOAsWaFczU1zpX9fBhiieLsksLV1osA6sIwPUbwwX4F0tFzB65pdB-M62Aj7tUS1ClqwQ_KTz6M01wqqrwsa_ETzi1cJ3KG_-a6PDqNMY8FWeakJcT5sJkwMi-g2FpvfCy2CWJGhDbNksqYkW8Sr-eWIkDrnOjo/s320/Les_Deux_Magots%20(3).png" class="d-block w-100" alt="cuisine6">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkW1ieMz5VymT1fzHeV0eoHFn7K4yM6VciIh7Nh7CbFQFRtp9UGSutJpB5NA2Z313633-aBSNGf3PkJPGWNTyPzNNrhjGmTezV5LkxlmGrb5xE7SDXIr5AVX8VyoV0RwCcyBQEuWezPkfReAMlHi_UdD2bMzTQkzdMNy59zs0LTpsdz7r5sI_f1EOx_Tk/s320/Les_Deux_Magots%20(2).png" class="d-block w-100" alt="cuisine6">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cuisine6" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cuisine6" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <div class="card-body p-0 pt-3">
+                <h5 class="card-title">Les Deux Magots</h5>
+              <p class="card-text text-justify">Les Deux Magots is a renowned café known for its famous patrons and vibrant atmosphere, perfect for people-watching.</p>
+              <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Cuisine 7 -->
+  
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-2">
+        <div class="card p-3 mx-auto">
+            <div id="cuisine7" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#cuisine7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#cuisine7" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#cuisine7" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLqlBAqX6NpgMsgOTmf4plIcNKsw_gpJ_Plh1wFyeRJd09ESsxkOS1D4iBfmyEXJ8bCau8hlcstNf734dvNxGl1yyekh5FZxskE7ZZA79gbhXnjcdwVT8PJhSbHZJKTjyZex5CmMkBMI_GME80CdhyphenhyphenwJS47HIPT32N4RJzIYcCkMfwVVXwuS6DlpR5ngI/s320/Vagenende%20Brasserie%20(2).png" class="d-block w-100" alt="cuisine7">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioqzJ18hmZYtvnQp5eRg-G1cBbmqC-T2nV5XFytwxDGl-K6jqwABRBKSsHUd7cQ5JfXgNNZE6rZUoCUJEhfPTA_bfwd1H63p-2Tnc2FARQpa9msMz1VgCHdjUnuQ0CU4ybjbJp12Yfp0huK-HZShlErZsGpHb55Ee_qVm96r-XQKdjPZaMIsRDti0m2KE/s320/Vagenende%20Brasserie.png" class="d-block w-100" alt="cuisine7">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhitkiQpENON-sXlzEqi8ElfqMLKB7_Enp7ZIVr9_ed9LoNVpJfmmjJ3QUAULZT55StbiWVKD0xb_f7NkL4MV-6DUl7NbX4tvxGd-AiWp-Dp1pR_4zxXYK0xXTWqOENpNw3XssNQwUq1v_F9umEWDtlXl1PQnj0oL9T0IifZPakck0j4HZDVJcm7bpn3_4/s320/Vagenende%20Brasserie%20(3).png" class="d-block w-100" alt="cuisine7">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cuisine7" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cuisine7" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <div class="card-body p-0 pt-3">
+                <h5 class="card-title">Vagenende Brasserie</h5>
+              <p class="card-text text-justify">Vagenende Brasserie is a charming spot serving classic French cuisine, renowned for its artistic decor.</p>
+              <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-half" viewBox="0 0 16 16">
+                    <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                  </svg>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Cuisine 8 -->
+  
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mt-2">
+        <div class="card p-3 mx-auto">
+            <div id="cuisine8" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#cuisine8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#cuisine8" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#cuisine8" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhshLylj7vuxA7zLr-TVPk31nJwWDVeBOuQ7KAAcWm5HV6x84svy1iVu8jfQDXgdAKg3iZvbLGECHVo_t9_EQlYM0MqvwTfDRpQ2m28XfS4u2uRBACazWddcUpy37jyIIfc2TQJzhVeZimB55L5DBAuXYwPDlX-CoCk5XaXnHna7dE1MMZyHWDkMRRR234/s320/Pedzouille%20La%20Grange%20(2).png" class="d-block w-100" alt="cuisine8">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnrxIXCdh6x42WR9sRhNMpJt3caIDXvpbKMVv2XOCqyxhbi45EEBYAOo92uJ0vrk6RbkmC6dq4fxazIB32t0pylaJQ-Ne_1plmFFsIaL2ekU4Pqk8o1xrryzexacwzJZy3CfXr387NzgaEWmECIenKcnYz1fpWE8zP5tfauz8gWLapzW7uL4iZ67b-VCo/s320/Pedzouille%20La%20Grange.png" class="d-block w-100" alt="cuisine8">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5tp0TLuT4VsKQJ-TINTnL_7nzvQqfQBBM6xcPj6PrS19roQ4ceMvuBGxAt5_PyOe-Jior9FFCdQG3gbwQKT6NAiqpTKvJPsIr70CdHhRlJkCQ4aBGBgxxIycrpaEXE7PBS26e3HIxXLRbnmqltuOCrtKTPJUksJXbbOaRz3PlckULnarej5W8Zj4KXA8/s320/Pedzouille%20La%20Grange%20(3).png" class="d-block w-100" alt="cuisine8">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#cuisine8" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#cuisine8" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <div class="card-body p-0 pt-3">
+                <h5 class="card-title">Pedzouille La Grange</h5>
+              <p class="card-text text-justify">Pedzouille La Grange is a cozy eatery offering traditional French dishes in a rustic setting.</p>
+              <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFC300" class="bi bi-star" viewBox="0 0 16 16">
+                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+                  </div>
+                </div>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <!-- Footer -->
+      <div class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-5 border-top bg-dark">
+        <p class="col-12 col-md-4 mb-0 text-white text-center text-md-start">© 2024 Paris, France</p>
+    
+        <a href="#landmark" class="col-12 col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="me-2" width="50" height="50" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwN-hen-Vl6DvjGJACfnx1lEcNuJGQmm5LhTFQzX8qwsH_qt3Cz7RFITmIq-oPWXbAVddEPr0Io8Py8mZ4Gzk0-36g87CJob4HBUNq66ugKCy5js_VmDvI81aHWoiBKIV9IbKLL2ncGXeoaBf8hoVKoaR3DUBgyPNW5dWzsCXpqsQRKdp39DsnfD0kAQE/s784/ircle.png"></img>
+        </a>
+    
+        <ul class="nav col-12 col-md-4 justify-content-center justify-content-md-end">
+          <li class="nav-item"><a href="../Project%202/project2.html" target="blank" class="nav-link px-2 text-white">Home</a></li>
+          <li class="nav-item"><a href="../Project%202/landmark.html" target="blank" class="nav-link px-2 text-white">Landmarks</a></li>
+          <li class="nav-item"><a href="../Project%202/park.html" target="blank" class="nav-link px-2 text-white">Park and Gardens</a></li>
+          <li class="nav-item"><a href="../Project%202/travel.html" target="blank" class="nav-link px-2 text-white">Travel Tips</a></li>
+        </ul>
+      </div>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
