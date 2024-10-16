@@ -1,0 +1,117 @@
+/* Light Theme */
+:root {
+  --text-color-light: #000000;
+  --text-color-dark: #ffffff;
+}
+
+/* Light Theme */
+[data-bs-theme="light"] {
+  --bs-body-bg: #f9f5ec;
+  --bs-body-color: #020106;
+  --bs-nav-link-color: #020106;
+  --bs-nav-link-hover-color: #ecbf02;
+  --bs-button-bg: #ecbf02;
+  --bs-button-color: #000;
+  --bs-dropdown-bg: #ffec44;
+  --bs-dropdown-border: #ecbf02;
+  --bs-dropdown-item-color: black;
+}
+
+/* Dark Theme */
+[data-bs-theme="dark"] {
+  --bs-body-bg: black;
+  --bs-body-color: #f9f5ec;
+  --bs-nav-link-color: #f9f5ec;
+  --bs-nav-link-hover-color: #ecbf02;
+  --bs-button-bg: #ecbf02;
+  --bs-button-color: #000000;
+  --bs-dropdown-bg: #ffec44;
+  --bs-dropdown-border: #ecbf02;
+  --bs-dropdown-item-color: black;
+}
+
+#themeToggle {
+  background: #000000;
+  border: 2px solid #ecbf02;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+#themeToggle:hover {
+  transform: scale(1.1);
+  background: #ecbf02;
+  color: #000000;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: var(--bs-nav-link-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: var(--bs-nav-link-hover-color) !important;
+}
+
+#categoryButton {
+  background-color: var(--bs-button-bg);
+  border: 2px solid var(--bs-button-bg);
+  color: var(--bs-button-color);
+  padding: 8px 20px;
+  width: 150px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#categoryButton:hover {
+  background-color: transparent;
+  color: var(--bs-body-color);
+}
+
+.header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #b90303;
+}
+.regular-text {
+  font-family: "Roboto", sans-serif;
+  color: var(--bs-body-color);
+}
+
+#about {
+  display: none;
+}
+
+.card {
+  height: 400px;
+}
+
+.card-img-top {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-title {
+  padding: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .card {
+    height: 250px;
+  }
+}
