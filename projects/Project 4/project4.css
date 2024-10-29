@@ -36,6 +36,16 @@ body {
   text-align: justify;
 }
 
+/* Default toggler icon for light mode */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none' stroke='black' stroke-width='3'%3E%3Cline x1='3' y1='7' x2='27' y2='7'/%3E%3Cline x1='3' y1='15' x2='27' y2='15'/%3E%3Cline x1='3' y1='23' x2='27' y2='23'/%3E%3C/svg%3E") !important;
+}
+
+/* Dark mode styles for toggler icon */
+body.dark-mode .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none' stroke='white' stroke-width='3'%3E%3Cline x1='3' y1='7' x2='27' y2='7'/%3E%3Cline x1='3' y1='15' x2='27' y2='15'/%3E%3Cline x1='3' y1='23' x2='27' y2='23'/%3E%3C/svg%3E") !important;
+}
+
 .navbar-nav .nav-link,
 .footer .nav-link {
   font-family: "Montserrat", sans-serif !important;
@@ -143,6 +153,10 @@ form .btn {
   box-shadow: 0 0 4px #b8c5d1 !important; 
   background-color: var(--background-color) !important; 
   outline: none !important; 
+}
+
+.search-input::placeholder { 
+  font-size: 0.9rem;
 }
 
 .layout {
