@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="project4.css" />
+    <title>TastyClick | Search</title>
+    <link rel="icon" type="image/x-icon" href="images/tasty_click.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body id="body" data-bs-theme="light">
+
+    <!-- Navigation Bar -->
+    <div class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="project4.html">
+          <img
+            src="images/tasty_logo.png"
+            alt="Clothes Logo"
+            width="160"
+            height="60"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="project4.html" target="_blank">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html" target="_blank">Recipes</a>
+            </li>
+          </ul>
+          <button id="themeToggle" onclick="changeMode()" class="pill-button">
+            Mode
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cover -->
+    <div id="home" class="background" style="padding-top: 85px">
+      <img
+        src="images/search-cover.png"
+        class="img-fluid animate__animated animate__fadeInDown animate__slower"
+        alt="search-cover"
+      />
+    </div>
+    
+    <!-- Search Category -->
+    <div class="px-4 my-5 py-3 text-center">
+      <h1
+        class="header mx-3 animate__animated animate__fadeInUp animate__slower"
+      >
+        Find Your Perfect Recipe Today!
+      </h1>
+      <div class="col-lg-6 mx-auto">
+        <p
+          class="regular-text mb-3 animate__animated animate__fadeInUp animate__slower"
+        >
+          TastyClick allows you to explore a variety of mouthwatering dishes,
+          each accompanied by a detailed list of ingredients, precise
+          measurements, and engaging video tutorials that make cooking easy and
+          enjoyable.
+        </p>
+        <form
+          class="d-flex justify-content-center animate__animated animate__fadeInUp animate__slower"
+          role="search"
+        >
+          <input
+            class="form-control w-50 regular-text rounded-end search-input"
+            id="searchTerm"
+            type="text"
+            placeholder="Search Food Category"
+            aria-label="Search"
+            onkeypress="checkEnter(event)"
+          />
+          <button
+            class="btn btn-outline-secondary rounded-start"
+            type="button"
+            onclick="searchMeals()"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      class="gradient-line-breaker mb-5 animate__animated animate__fadeInUp animate__slower"
+      id="resultsSection"
+    ></div>
+    
+    <!-- Search Category Result -->
+    <div
+      class="container-fluid animate__animated animate__fadeInUp animate__slower">
+    >
+      <div class="row justify-content-center">
+      <div
+        class="row justify-content-center mx-1"
+        id="cardContainer"
+      >
+      </div>
+
+    <script>
+      // Selects the container where meal cards will be displayed
+      var cardContainer = document.getElementById("cardContainer");
+      
+      // Async function to fetch and display meals based on a category
+      const loadMeals = async (category) => {
+        const response = await fetch(
+          "https://www.themealdb.com/api/json/v1/1/filter.php?c=" + category
+        );
+        const data = await response.json();
+
+        // Clear the card container before displaying new results
+        cardContainer.innerHTML = "";
+
+        if (data.meals) {
+          // Add the search results heading
+            cardContainer.innerHTML += `
+              <div class="row justify-content-center">
+                <div class="col text-center">
+                  <h3 class="header mx-3 mt-4 mb-5 py-0" style="color: rgb(0, 0, 0)">
+                    <span class="header">TastyClick</span> Search Results:
+                  </h3>
+                </div>
+              </div>
+            `;
+
+          data.meals.forEach((meal) => {
+            cardContainer.innerHTML +=
+              `
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center mb-5">
+            <div class="card animate__animated animate__fadeInUp animate__slower" style="max-width: 600px; background-color: #FFF4F7;">
+                <img src="` +
+              meal.strMealThumb +
+              `" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div style="height: 60px;" class="d-flex align-items-center justify-content-center">
+                        <h5 class="card-title header text-center mb-0" style="color: #e65c87;">` +
+              meal.strMeal +
+              `</h5>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a href="view.html?meal=` +
+              meal.idMeal +
+              `"  class="btn btn-outline-secondary pill-button" target="_blank" style="font-size: 0.90rem;">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+          });
+        } else {
+          // Message displayed if no meals match the category
+          cardContainer.innerHTML =
+            '<p class="text-center regular-text my-4 fw-bold">No meals found for the category "' +
+            category +
+            '"</p>';
+        }
+        // Scroll to results section after loading meals
+          document.getElementById("resultsSection").scrollIntoView({ behavior: 'smooth' });
+      };
+      function searchMeals() {
+        var category = document.getElementById("searchTerm").value;
+        loadMeals(category);
+      }
+      function checkEnter(event) {
+        if (event.key === "Enter") {
+          event.preventDefault(); // Prevent the form from submitting
+          searchMeals(); // Call the search function
+        }
+      }
+    </script>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

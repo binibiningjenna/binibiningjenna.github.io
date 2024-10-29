@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="project4.css" />
+
+    <title>TastyClick</title>
+    <link rel="icon" type="image/x-icon" href="images/tasty_click.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body id="body" data-bs-theme="light">
+
+    <!-- Navigation Bar -->
+    <div class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="project4.html">
+          <img
+            src="images/tasty_logo.png"
+            alt="Clothes Logo"
+            width="160"
+            height="60"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html" target="_blank">Recipes</a>
+            </li>
+          </ul>
+          <button id="themeToggle" onclick="changeMode()" class="pill-button">
+            Mode
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cover -->
+    <div id="home" class="main-cover">
+      <video autoplay loop muted class="background">
+        <source src="videos/home-video.mp4 " type="video/mp4" />
+      </video>
+    </div>
+    
+    <!-- About Section -->
+    <div class="container-fluid" id="about">
+      <div
+        class="row row-cols-1 row-cols-md-2 align-items-md-center g-4 py-5 mx-1"
+      >
+        <div class="col d-flex flex-column align-items-start gap-2">
+          <h1 class="fw-bold header scroll-animate" style="color: rgb(0, 0, 0)">
+            About <span class="header">TastyClick</span>
+          </h1>
+          <p class="regular-text justify scroll-animate">
+            Welcome to TastyClick, your go-to destination for delicious recipes
+            right at your fingertips! Our mission is to make cooking enjoyable,
+            accessible, and fast, helping you find recipes that are as simple to
+            make as they are delightful to eat. At TastyClick, we believe that
+            cooking should be a flavorful adventure — one that starts with a
+            single click.
+          </p>
+          <p class="regular-text justify scroll-animate">
+            Whether you’re meal prepping for the week, hosting a dinner party,
+            or trying something new, TastyClick is here to make your cooking
+            experience fun, flavorful, and fast. Click into the world of flavor
+            with us and let’s make something delicious together!
+          </p>
+          <a
+            href="search.html"
+            class="btn btn-outline-secondary pill-button scroll-animate"
+            target="_blank"
+            >Try Now</a
+          >
+        </div>
+
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small icon-bg d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3 scroll-animate"
+                style="width: 50px; height: 50px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#fce0e8"
+                  class="bi bi-hand-thumbs-up-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-bold mb-0 regular-text scroll-animate">
+                Simplicity
+              </h4>
+              <p class="regular-text justify scroll-animate">
+                Cooking should be enjoyable and stress-free, so we focus on
+                offering recipes that are easy to make and understand.
+              </p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small icon-bg d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3 scroll-animate"
+                style="width: 50px; height: 50px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#fce0e8"
+                  class="bi bi-cursor-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-bold mb-0 regular-text scroll-animate">
+                One-Click Convenience
+              </h4>
+              <p class="regular-text justify scroll-animate">
+                TastyClick allows you to find and prepare recipes in seconds.
+                With categories tailored to your preferences, you’re always one
+                click away from a delicious meal.
+              </p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small icon-bg d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3 scroll-animate"
+                style="width: 50px; height: 50px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#fce0e8"
+                  class="bi bi-book-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-bold mb-0 regular-text scroll-animate">Recipes</h4>
+              <p class="regular-text justify scroll-animate">
+                We’re all about tasty recipes. Each recipe on TastyClick is
+                crafted or curated with bold flavors and quality ingredients in
+                mind.
+              </p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small icon-bg d-inline-flex align-items-center justify-content-center bg-gradient fs-4 rounded-3 scroll-animate"
+                style="width: 50px; height: 50px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#fce0e8"
+                  class="bi bi-gear-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-bold mb-0 regular-text scroll-animate">
+                Smart Algorithm
+              </h4>
+              <p class="regular-text justify scroll-animate">
+                Our smart algorithm learns from your preferences, recommending
+                recipes that match your tastes and available ingredients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gradient-line-breaker" id="gallery"></div>
+    
+    <!-- Gallery Section -->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col text-center">
+          <h2
+            class="header mx-5 my-5 py-0 scroll-animate"
+            style="color: rgb(0, 0, 0)"
+          >
+            TastyClick Gallery: Explore Our
+            <span class="header">Categories</span>
+          </h2>
+        </div>
+      </div>
+      <div
+        class="row mx-1 animate__animated animate__fadeInUp animate__slower"
+        id="cardContainer"
+      >
+      </div>
+    </div>
+
+    <figure
+      class="text-center my-5 scroll-animate mx-5"
+    >
+      <blockquote class="regular-text">
+        <p>
+          A recipe has no soul. You, as the cook, must bring soul to the recipe.
+        </p>
+      </blockquote>
+      <figcaption class="blockquote-footer regular-text">
+        An insightful quote by <cite title="Source Title">Thomas Keller</cite>
+      </figcaption>
+    </figure>
+
+    <!-- Footer -->
+    <div
+      class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-5 border-top bg-white footer"
+    >
+      <p
+        class="col-12 col-md-4 mb-0 text-center text-md-start header"
+        style="color: rgb(0, 0, 0)"
+      >
+        © 2024 | JMAR
+      </p>
+
+      <ul
+        class="nav col-12 col-md-4 justify-content-center justify-content-md-end"
+      >
+        <li class="nav-item">
+          <a href="#home" class="nav-link px-2 fw-bold" style="color: black"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link px-2 fw-bold" style="color: black"
+            >About</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#gallery" class="nav-link px-2 fw-bold" style="color: black"
+            >Gallery</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="search.html"
+            target="_blank"
+            class="nav-link px-2 fw-bold"
+            style="color: black"
+            >Recipes</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      // Fetch and render the categories
+      async function fetchAndRenderCategories() {
+        const response = await fetch(
+          "https://www.themealdb.com/api/json/v1/1/categories.php"
+        );
+        const data = await response.json();
+        const categories = data.categories;
+
+        // Reference to card container
+        var cardContainer = document.getElementById("cardContainer");
+        cardContainer.innerHTML = ""; 
+
+        // Process each category
+        for (var i = 0; i < categories.length; i++) {
+          var category = categories[i];
+          cardContainer.innerHTML +=
+            '<div class="col-6 col-sm-4 col-md-3 mb-4">' +
+            '<div class="card h-100 scroll-animate" style="background-color: #FFF4F7;">' +
+            '<img src="' +
+            category.strCategoryThumb +
+            '" class="card-img-top" alt="' +
+            category.strCategory +
+            '">' +
+            '<div class="card-body">' +
+            '<h5 class="card-title fw-bold regular-text">' +
+            category.strCategory +
+            "</h5>" +
+            "</div>" +
+            "</div>" +
+            "</div>";
+        }
+      }
+
+      // Call the function to execute
+      fetchAndRenderCategories();
+    </script>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

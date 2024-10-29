@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="project4.css" />
+    <title>TastyClick | Recipe</title>
+    <link rel="icon" type="image/x-icon" href="images/tasty_click.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body id="body" data-bs-theme="light">
+
+    <!-- Navigation Bar -->
+    <div class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="project4.html">
+          <img
+            src="images/tasty_logo.png"
+            alt="Clothes Logo"
+            width="160"
+            height="60"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="project4.html" target="_blank">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html" target="_blank">Recipes</a>
+            </li>
+          </ul>
+          <button id="themeToggle" onclick="changeMode()" class="pill-button">
+            Mode
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!--Content Section | Image, Meal Name, Category, Area, Ingredients, Measurements, Instructions, and Youtube -->
+    <div class="container-fluid layout px-3 mb-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-sm-10 col-md-11">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow h-md-250 position-relative"
+          >
+            <div
+              class="col-12 col-md-6 px-4 pt-4 d-flex justify-content-center animate__animated animate__fadeInUp animate__slower"
+              id="imgContainer"
+            >
+              <img
+                src=""
+                alt="Meal Image"
+                class="img-fluid image-style"
+                id="img"
+              />
+            </div>
+            <div class="col p-4 d-flex flex-column position-static">
+              <h1
+                class="mb-2 header text-uppercase animate__animated animate__fadeInUp animate__slower"
+                id="title"
+              >
+                Featured post
+              </h1>
+              <div
+                class="d-flex flex-wrap mb-5 animate__animated animate__fadeInUp animate__slower"
+              >
+                <span class="badge rounded-pill me-2" id="meal-area"
+                  >Light</span
+                >
+                <span class="badge rounded-pill" id="meal-category"
+                  >Meal Category</span
+                >
+              </div>
+              <table class="table-borderless" style="background-color: #fce0e8">
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      class="regular-text fw-bold text-uppercase animate__animated animate__fadeInUp animate__slower"
+                    >
+                      Measurements
+                    </th>
+                    <th
+                      scope="col"
+                      class="regular-text fw-bold text-uppercase animate__animated animate__fadeInUp animate__slower"
+                    >
+                      Ingredients
+                    </th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="regular-text animate__animated animate__fadeInUp animate__slower"
+                  id="ingredients"
+                ></tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h1
+                  class="header my-4 mx-2 animate__animated animate__fadeInUp animate__slower"
+                >
+                  INSTRUCTIONS
+                </h1>
+                <ul
+                  class="regular-text my-0 mx-2 animate__animated animate__fadeInUp animate__slower"
+                  style="text-align: justify"
+                  id="instructions"
+                ></ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a
+                  href=""
+                  id="youtube-link"
+                  target="_blank"
+                  class="btn btn-outline-secondary pill-button my-4 mx-2 animate__animated animate__fadeInUp animate__slower"
+                  style="font-size: 0.9rem"
+                  >Video Tutorial</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var categoryColors = {
+        Beef: "#3A3F50",
+        Chicken: "#FFB6C1",
+        Dessert: "#B86E7C",
+        Lamb: "#D6456B",
+        Miscellaneous: "#CC8A9D",
+        Pasta: "#FF8C94",
+        Pork: "#F26A7A",
+        Seafood: "#FF6385",
+        Side: "#C07B7F",
+        Starter: "#FF7D7D",
+        Vegan: "#6FC3C8",
+        Vegetarian: "#68B468",
+        Breakfast: "#FFC884",
+        Goat: "#FFB400",
+      };
+
+      var areaColors = {
+        American: "#44475a",
+        British: "#5c5f74",
+        Canadian: "#6e7a8a",
+        Chinese: "#3b3d4a",
+        Croatian: "#4a4c5c",
+        Dutch: "#5a5c6a",
+        Egyptian: "#464a50",
+        Filipino: "#6c7b8f",
+        French: "#3e4053",
+        Greek: "#515769",
+        Indian: "#585b6b",
+        Irish: "#4b4e5f",
+        Italian: "#525560",
+        Jamaican: "#6a6d7d",
+        Japanese: "#4c4e5a",
+        Kenyan: "#5d5f6c",
+        Malaysian: "#4e505a",
+        Mexican: "#555764",
+        Moroccan: "#6a6b7d",
+        Polish: "#63667a",
+        Portuguese: "#4f515f",
+        Russian: "#5c5e6e",
+        Spanish: "#515463",
+        Thai: "#585b6b",
+        Tunisian: "#4b4d59",
+        Turkish: "#525560",
+        Ukrainian: "#4e505b",
+        Unknown: "#30333f",
+        Vietnamese: "#5a5c6a",
+      };
+
+      var title = document.getElementById("title");
+      var mealArea = document.getElementById("meal-area");
+      var mealCategory = document.getElementById("meal-category");
+      var ingredientsList = document.getElementById("ingredients");
+      var instructionsList = document.getElementById("instructions");
+      var youtubeLink = document.getElementById("youtube-link");
+      var img = document.getElementById("img");
+      
+      // Function to load and display meal details based on meal ID
+      const loadMeal = async (mealId) => {
+        const response = await fetch(
+          "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + mealId
+        );
+        const data = await response.json();
+
+        if (data.meals && data.meals.length > 0) {
+          const meal = data.meals[0];
+
+          // Set meal title, area, and category
+          title.innerHTML = meal.strMeal;
+          mealArea.innerHTML = meal.strArea;
+          mealCategory.innerHTML = meal.strCategory;
+
+           // Set background color for area and category, with fallback color
+          mealArea.style.backgroundColor = areaColors[meal.strArea] || "#000";
+          mealCategory.style.backgroundColor =
+            categoryColors[meal.strCategory] || "#000";
+
+           // Set meal image source
+          img.src = meal.strMealThumb;
+
+          // Display ingredients and measurements
+          ingredientsList.innerHTML = "";
+          for (let i = 1; i <= 30; i++) {
+            const ingredient = meal["strIngredient" + i];
+            const measurement = meal["strMeasure" + i];
+            if (ingredient) {
+               // Create table row for each ingredient and measurement
+              const tr = document.createElement("tr");
+              const measurementCell = document.createElement("td"); 
+              const ingredientCell = document.createElement("td"); 
+              measurementCell.textContent = measurement; 
+              ingredientCell.textContent = ingredient; 
+              tr.appendChild(measurementCell); 
+              tr.appendChild(ingredientCell); 
+              ingredientsList.appendChild(tr);
+            }
+          }
+
+          // Display instructions as bullet points
+          const instructionsArray = meal.strInstructions.split(". ");
+          instructionsList.innerHTML = "";
+          instructionsArray.forEach((instruction) => {
+            if (instruction.trim()) {
+              const li = document.createElement("li");
+              li.textContent = instruction.trim() + ".";
+              instructionsList.appendChild(li);
+            }
+          });
+          
+          // Set YouTube link for the recipe video
+          youtubeLink.href = meal.strYoutube;
+        } else {
+          // Display message if no meal is found
+          title.innerHTML = "No meal found";
+          console.error("No meal found in API response:", data);
+        }
+      };
+
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+
+      if (urlParams.has("meal")) {
+        loadMeal(urlParams.get("meal"));
+      } else {
+        title.innerHTML = "No meal found";
+      }
+    </script>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
