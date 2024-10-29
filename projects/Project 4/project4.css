@@ -94,6 +94,11 @@ body.dark-mode .navbar-toggler-icon {
   color: var(--button-hover-text) !important; 
 }
 
+.img {
+  height: auto; 
+  object-fit: cover;
+}
+
 /* Dark Red */
 [data-bs-theme="dark"] {
   --header-color: #731a1a; 
