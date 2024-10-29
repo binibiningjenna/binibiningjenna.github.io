@@ -95,7 +95,6 @@ body.dark-mode .navbar-toggler-icon {
 }
 
 .img {
-  height: auto; 
   object-fit: cover;
 }
 
