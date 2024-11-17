@@ -15,7 +15,7 @@ const projects = [
       title: "MacBook Pro Showcase",
       description: "This website brings the sleek design and powerful features of the MacBook to life. Built with HTML and CSS, it’s a simple yet elegant space that shows how the MacBook can fuel creativity. Whether you're working or creating, this site highlights everything that makes the MacBook stand out.",
       languages: ["HTML", "CSS"],
-      website: "#",
+      website: "projects/Project 1/project1.html",
       github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%201"
   },
   {
@@ -23,7 +23,7 @@ const projects = [
       title: "Paris, France Country Showcase",
       description: "Paris, the City of Light, is home to iconic landmarks, vibrant culture, and timeless beauty. This site takes you on a virtual tour of Paris, showcasing its most famous spots and unique charm. Built with HTML, CSS, and Bootstrap, it’s your gateway to the magic of Paris.",
       languages: ["HTML", "CSS"],
-      website: "#",
+      website: "projects/Project 2/project2.html",
       github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%202"
   },
   {   
@@ -31,7 +31,7 @@ const projects = [
       title: "Looped Trend Gallery",
       description: "Step into a stunning clothing gallery showcasing the latest fashion trends for women, men, and kids. With HTML, CSS, Bootstrap, and JavaScript, this site brings you the best in style, with a smooth browsing experience. Whether you're into casual wear or formal outfits, there’s something here to inspire your wardrobe.",
       languages: ["HTML", "CSS", "JavaScript"],
-      website: "#",
+      website: "projects/Project 3/project3.html",
       github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%203"
   },
   {
@@ -39,7 +39,7 @@ const projects = [
       title: "Tasty Recipe API",
       description: "TastyClick is your go-to spot for discovering delicious recipes from around the world. Built with HTML, CSS, JavaScript, API, and Bootstrap, this site makes it easy to find and try new dishes. From breakfast to dinner, you'll find plenty of tasty options to spice up your cooking routine.",
       languages: ["HTML", "CSS", "JavaScript"],
-      website: "#",
+      website: "projects/Project 4/project4.html",
       github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%204"
   },
   {
@@ -47,16 +47,16 @@ const projects = [
       title: "Coral Wonders",
       description: "Coral Wonders takes you on a journey through vibrant coral reefs. With stunning visuals and insights, it highlights the beauty and importance of underwater ecosystems. Built with HTML, CSS, JavaScript, and Bootstrap, it’s designed to engage visitors and share the wonders of coral life.",
       languages: ["HTML", "CSS", "JavaScript"],
-      website: "#",
-      github: ""
+      website: "projects/Project 5/project5.html",
+      github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%205"
   },
   {
       image: "images/project_6.png",
       title: "Planet Parallax Explorer",
       description: "Planet Explorer is your destination for discovering planets and celestial wonders. Built with HTML, CSS, JavaScript, and parallax effects, this site enables interactive exploration of the cosmos. With stunning visuals and smooth animations, dive into the wonders of space and gain insights into the vast universe",
       languages: ["HTML", "CSS", "JavaScript"],
-      website: "#",
-      github: ""
+      website: "projects/Project 6/project6.html",
+      github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%206"
   }
 ];
 
