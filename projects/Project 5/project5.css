@@ -195,7 +195,7 @@ body {
 
 @media (max-width: 768px) {
   .description {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -207,6 +207,6 @@ body {
     font-size: 1rem;
   }
   .title {
-    font-size: 80px;
+    font-size: 65px;
   }
 }
