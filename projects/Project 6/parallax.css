@@ -1,0 +1,223 @@
+/* PARALLAX.CSS */
+/* CSS created by Christopher Jay De Claro */
+/* github.com/cjdeclaro */
+
+/* Key Art default settings */
+.keyart,
+.keyart_layer {
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.keyart {
+    position: relative;
+    z-index: 10;
+}
+
+.keyart_layer {
+    background-position: center center; 
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.keyart_layer.parallax {
+    position: fixed; 
+}
+
+.main-content {
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+}
+
+/* Add or remove layers as needed */
+#keyart-0 {
+    background-image: url(img/parallax0.png);
+    background-size: fill;
+}
+
+#keyart-1 {
+    background-image: url(img/parallax1.png);
+}
+
+#keyart-2 {
+    background-image: url(img/parallax2.png);
+}
+
+#keyart-3 {
+    background-image: url(img/parallax3.png);
+}
+
+#keyart-4 {
+    background-image: url(img/parallax4.png);
+}
+
+#keyart-5 {
+    background-image: url(img/parallax5.png);
+}
+
+#keyart-6 {
+    background-image: url(img/parallax6.png);
+}
+
+#keyart-7 {
+    background-image: url(img/parallax7.png);
+}
+
+#keyart-8 {
+    background-image: url(img/parallax8.png);
+}
+
+#keyart-9 {
+    background-image: url(img/parallax9.png);
+}
+
+#keyart-10 {
+    background-image: url(img/parallax10.png);
+}
+
+#keyart-scrim {
+    opacity: 0;
+}
+
+/* Ultra-large screens (1920px and above for ultra-wide desktops) */
+@media (min-width: 1920px) {
+    .keyart,
+    .keyart_layer {
+        height: 100vh;
+    }
+
+    #keyart-0 {
+        height: 100vh;
+    }
+
+    .keyart_layer.parallax {
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+/* Large desktop and smaller ultra-wide screens (between 1480px and 1919px) */
+@media (min-width: 1480px) and (max-width: 1919px) {
+    .keyart,
+    .keyart_layer {
+        height: 100vh;
+    }
+
+    #keyart-0 {
+        height: 100vh;
+    }
+
+    .keyart_layer.parallax {
+        background-size: auto 100%;
+        background-attachment: fixed;
+    }
+}
+
+/* Tablets and small desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .keyart,
+    .keyart_layer {
+        height: 80vh;
+    } 
+
+    #keyart-0 {
+        height: 80vh;
+    }
+
+    .keyart_layer.parallax {
+        background-size: auto 90%;
+        background-attachment: fixed;
+    }
+}
+
+/* Large tablets and smaller desktops (between 820px and 1480px) */
+@media (min-width: 820px) and (max-width: 1480px) {
+    .keyart,
+    .keyart_layer {
+        height: 60vh;
+    }
+
+    #keyart-0 {
+        height: 70vh;
+    }
+
+    .keyart_layer.parallax {
+        background-size: auto 90%;
+        background-attachment: fixed;
+    }
+}
+
+/* Smaller tablets (max-width: 820px) */
+@media (max-width: 820px) {
+    .keyart,
+    .keyart_layer {
+        height: 40vh;
+    }
+
+    #keyart-0 {
+        height: 50vh;
+    }
+
+    .keyart_layer.parallax {
+        background-size: auto 100%;
+        background-attachment: fixed;
+    }
+}
+
+/* Small tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .keyart,
+    .keyart_layer {
+        height: 40vh;
+    }
+
+    #keyart-0 {
+        height: 40vh;
+    }
+
+    .keyart_layer.parallax {
+        background-size: auto 100%;
+        background-attachment: fixed;
+    }
+}
+
+/* Smartphones (max-width: 600px) */
+@media (max-width: 600px) {
+    .keyart,
+    .keyart_layer {
+        height: 50vh;
+    }
+
+    #keyart-0 {
+        height: 70vh;
+    }
+
+    .keyart_layer.parallax {
+        background-size: auto 80%;
+        background-attachment: fixed;
+    }
+}
+
+/* Smallest phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .keyart,
+    .keyart_layer {
+        height: 30vh;
+    }
+
+    #keyart-0 {
+        height: 40vh;
+    }
+
+    .keyart_layer.parallax {
+        background-size: auto 90%;
+        background-attachment: fixed;
+    }
+}
+
