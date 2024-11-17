@@ -74,11 +74,10 @@ body {
 
 .iframe-container {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 400px;
-  overflow: hidden;
-  max-width: 100%;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
   background: #000;
+  overflow: hidden;
 }
 
 .iframe-container iframe {
@@ -128,12 +127,6 @@ body {
   cursor: url('img/cursor.png'), auto;
 }
 
-@media (max-width: 768px) {
-  .heading {
-    font-size: 2rem;
-  }
-}
-
 .galaxy-background {
   position: absolute;
   top: 0;
@@ -160,6 +153,21 @@ body {
   }
   100% {
       transform: translateY(200px) translateX(300px);
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .iframe-container {
+    height: 80vh; 
+    padding-top: 0;
+  }
+
+  .iframe-container iframe {
+    height: 80%;
+    width: 100%; 
   }
 }
 
