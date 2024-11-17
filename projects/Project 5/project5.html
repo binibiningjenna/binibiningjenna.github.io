@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coral Wonders</title>
+    <link rel="icon" href="images/icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project5.css" />
+  </head>
+
+  <body>
+
+    <nav id="navbar_portfolio" class="navbar navbar-expand-lg fixed-top navbar-dark py-0 my-0" style="background-color: #001f2d">
+      <!-- Logo -->
+      <a class="navbar-brand" href="project5.html">
+        <img
+          src="images/icon.png"
+          alt="Logo"
+          class="logo"
+          style="width: 4rem; margin-left: 1rem"
+        />
+      </a>
+      <!-- Toggle Button for Mobile -->
+      <button
+        class="navbar-toggler"
+        style="margin-right: 1.2rem"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-pills mx-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-style text-center" href="#scrollspyHome">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-style text-center" href="#scrollspyAbout">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-style text-center" href="#scrollspyWonders">WONDERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-style text-center" href="#scrollspyGallery">GALLERY</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Scrollspy content -->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar_portfolio"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example rounded-2"
+      tabindex="0"
+      >
+
+      <div class="container-fluid p-0" style="position: relative; width: 100%; overflow: hidden;" id="scrollspyHome">
+        <div class="row">
+          <div class="col" style="height: 130vh;">
+            <iframe  style="pointer-events: none; margin-left: 50%; transform: translateX(-50%); margin-top: -3rem;"
+            width="4000px" height="100%"" src="https://www.youtube.com/embed/cdRviRlcFL8?si=G-S7vA_nGLGh_yJU&autoplay=1&mute=1&controls=0&rel=0&disablekb=1&loop=1&playlist=cdRviRlcFL8" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh;">
+          <div class="text-center">
+            <div class="heading" style="font-size: 80px; color:#00b0ff; text-shadow: 5px 5px 10px rgb(0, 0, 0);">
+              Coral Wonders
+            </div>
+            <div class="subheading fw-normal description" style="color:#f0f0f0; text-shadow: 5px 5px 10px rgb(0, 0, 0);">
+              Dive Deeper, Discover More.
+            </div>
+          </div>
+         </div>
+        </div>
+       </div>
+
+       <!-- About Coral Reefs -->
+      <div id="scrollspyAbout" class="m-3 m-md-5 my-md-5 py-md-5 content">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row d-flex align-items-center">
+              <div class="col-12 col-md-5 text-center text-md-start">
+                <h1 class="heading my-4 scroll-animate">
+                  About
+                  <span class="heading" style="color: #00b0ff">Coral Reefs</span>
+                </h1>
+                <p class="body fw-normal text-justify scroll-animate">
+                  Coral reefs are some of the most diverse ecosystems in the world. Coral polyps, the animals primarily responsible for building reefs, can take many forms: large reef building colonies, graceful flowing fans, and even small, solitary organisms. Thousands of species of corals have been discovered; some live in warm, shallow, tropical seas and others in the cold, dark depths of the ocean.
+                </p>
+                <div class="d-flex justify-content-start scroll-animate">
+                  <a
+                    href="https://maps.app.goo.gl/aUccs3XCapbnVk9Z8"
+                    target="_blank"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-outline-info p5-btn w-100 hover-effect"
+                    >
+                      360 Coral Reefs
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-7 text-center py-3 scroll-animate">
+                <img
+                  src="images/coral1.png"
+                  class="img-fluid mx-auto hover-effect"
+                  style="border-radius: 20px;"
+                  alt="planet image"
+                  width="700"
+                  height="500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid pt-3" id="scrollspyWonders">
+        <div class="row justify-content-center">
+          
+          <!-- Coral Reefs Wonders -->
+          <div class="col-12 col-md-10">
+            <h2 class="text-center mb-4 heading scroll-animate">Explore the Wonders of <span class="heading" style="color: #00b0ff">Coral Reefs</span></h2>
+            <p class="body text-center mb-5 px-4 scroll-animate">Coral reefs are one of the most biologically rich ecosystems on Earth. They support a wide variety of marine life and provide essential ecological services.</p>
+            
+            <div class="row p-2">
+              <!-- Importance of Coral Reefs -->
+              <div class="col-12 col-md-6 mb-4">
+                <h3 class="subheading text-center scroll-animate">Why Are Coral Reefs Important?</h3>
+                <div class="d-flex justify-content-center mb-3 scroll-animate">
+                  <img src="images/coral2.png" class="img-fluid hover-effect" width="550" height="500" alt="Importance of Coral Reefs" style="border-radius: 20px;">
+                </div class="scroll-animate">
+                <ul>
+                  <li class="body text-justify">Provide food, shelter, and breeding grounds for over 25% of marine life species.</li>
+                  <li class="body text-justify">Protect coastlines from storm damage by acting as natural barriers that reduce wave energy.</li>
+                  <li class="body text-justify">Support local economies through tourism and fisheries, contributing billions of dollars annually.</li>
+                  <li class="body text-justify">Store carbon and contribute to the global climate system by regulating CO2 levels.</li>
+                  <li class="body text-justify">Serve as valuable tools for scientific research in medicine, especially in cancer treatments and anti-inflammatory drugs.</li>
+                </ul>
+              </div>
+              
+              <!-- Threats to Coral Reefs -->
+              <div class="col-12 col-md-6 mb-4">
+                <h3 class="subheading text-center scroll-animate">Threats to Coral Reefs</h3>
+                <div class="d-flex justify-content-center mb-3 scroll-animate">
+                  <img src="images/coral3.png" class="img-fluid hover-effect" width="550" height="500" alt="Importance of Coral Reefs" style="border-radius: 20px;">
+                </div class="scroll-animate">
+                <ul>
+                  <li class="body text-justify"><strong>Climate change:</strong> Rising ocean temperatures cause coral bleaching, weakening reefs and making them vulnerable to disease.</li>
+                  <li class="body text-justify"><strong>Pollution:</strong> Agricultural runoff, plastics, and sewage contaminate water quality and harm coral health.</li>
+                  <li class="body text-justify"><strong>Overfishing:</strong> Destructive fishing practices such as blast fishing and trawling physically damage coral ecosystems.</li>
+                  <li class="body text-justify"><strong>Coastal development:</strong> Construction along coastlines can lead to habitat loss and increased sedimentation that smothers corals.</li>
+                </ul>
+              </div>
+            </div>
+      
+            <div class="row p-2">
+              <!-- Conservation Efforts -->
+              <div class="col-12 col-md-6 mb-4">
+                <h3 class="subheading text-center scroll-animate">Conservation Efforts</h3>
+                <div class="d-flex justify-content-center mb-3  scroll-animate">
+                  <img src="images/coral4.png" class="img-fluid hover-effect" width="550" height="500" alt="Importance of Coral Reefs" style="border-radius: 20px;">
+                </div class="scroll-animate">
+                <p class="body text-justify">Various organizations and governments are working tirelessly to protect and restore coral reefs through a variety of initiatives:</p>
+                <ul>
+                  <li class="body text-justify"><strong>Marine Protected Areas (MPAs):</strong> These designated areas help restrict human activities that could harm coral reefs, such as fishing and coastal development.</li>
+                  <li class="body text-justify"><strong>Coral restoration projects:</strong> Scientists are experimenting with coral farming, transplantation, and breeding to restore damaged reefs.</li>
+                </ul>
+              </div>
+              
+              <!-- Economic Impact -->
+              <div class="col-12 col-md-6 mb-4">
+                <h3 class="subheading text-center scroll-animate">The Economic Impact of Coral Reefs</h3>
+                <div class="d-flex justify-content-center mb-3  scroll-animate">
+                  <img src="images/coral5.png" class="img-fluid hover-effect" width="550" height="500" alt="Importance of Coral Reefs" style="border-radius: 20px;">
+                </div class="scroll-animate">
+                <p class="body text-justify ps-md-2">Coral reefs are vital to the global economy, especially for island nations and coastal regions. They provide sustainable livelihoods through tourism, fishing, and the emerging field of marine biotechnology. The estimated value of coral reefs to the global economy is around $375 billion annually. This includes revenue from tourism, the fishing industry, and the protection of coastal infrastructure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid py-md-5 my-md-5" id="scrollspyGallery">
+        <div class="row">
+          <h2 class="text-center mb-4 heading scroll-animate">Life Below the <span class="heading" style="color: #00b0ff">Waves</span></h2>
+          <div class="col-12">
+            <div class="image-gallery">
+              <div class="image-slide">
+                <div class="col-8 col-md-4">
+                  <div class="card my-3 mx-2">
+                    <img src="images/coral6.png" class="card-img-top hover-effect" alt="coral reef">
+                  </div>
+                </div>
+                <div class="col-8 col-md-4">
+                  <div class="card my-3 mx-2">
+                    <img src="images/coral7.png" class="card-img-top hover-effect" alt="coral reef">
+                  </div>
+                </div>
+                <div class="col-8 col-md-4">
+                  <div class="card my-3 mx-2">
+                    <img src="images/coral8.png" class="card-img-top hover-effect" alt="coral reef">
+                  </div>
+                </div>
+                <div class="col-8 col-md-4">
+                  <div class="card my-3 mx-2">
+                    <img src="images/coral9.png" class="card-img-top hover-effect" alt="coral reef">
+                  </div>
+                </div>
+                <div class="col-8 col-md-4">
+                  <div class="card my-3 mx-2">
+                    <img src="images/coral10.png" class="card-img-top hover-effect" alt="coral reef">
+                  </div>
+                </div>
+                <div class="col-8 col-md-4">
+                  <div class="card my-3 mx-2">
+                    <img src="images/coral1.png" class="card-img-top hover-effect" alt="coral reef">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <!-- Footer -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-5">
+          <h4 class="col-12 col-md-4 mb-0 text-center text-md-start nav-style nav-link">
+            Website by JMAR
+          </h4>
+
+          <!-- Navigation Links -->
+          <ul class="nav col-12 col-md-8 justify-content-center justify-content-md-end">
+            <li class="nav-item heading h4">
+              <a href="#scrollspyHome" class="nav-link px-2 fw-bold nav-style">Home</a>
+            </li>
+            <li class="nav-item heading h4">
+              <a href="#scrollspyAbout" class="nav-link px-2 fw-bold nav-style">About</a>
+            </li>
+            <li class="nav-item heading h4">
+              <a href="#scrollspyWonders" class="nav-link px-2 fw-bold nav-style">Wonders</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
