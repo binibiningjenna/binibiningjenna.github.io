@@ -201,12 +201,12 @@ body {
 
 @media (max-width: 1299px) {
   .heading {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .body {
     font-size: 1rem;
   }
   .title {
-    font-size: 100px;
+    font-size: 80px;
   }
 }
