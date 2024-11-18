@@ -132,8 +132,8 @@ function generateSkills(data, containerId) {
     // Start adding HTML for the category column and card
     html +=
       '<div class="col-12 col-md-6 col-lg-4 mb-4">' +
-        '<h5 class="text-center subheading pb-3" style="color:#EDECE5">' + category + '</h5>' +
-        '<div class="card mb-3" style="background-color: #333;">' +
+        '<h5 class="text-center subheading pb-3" style="color:#EDECE5" data-aos="fade-up">' + category + '</h5>' +
+        '<div class="card mb-3" style="background-color: #333;" data-aos="fade-up">' +
           '<div class="card-body">';
 
     // Loop through the skills in the current category
@@ -193,3 +193,12 @@ var skillData = [
 ];
 
   generateSkills(skillData, "skills-container");
+
+  //Scroll Animation
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        duration: 2000,  
+        once: true, 
+        offset: 200,         
+    });
+    });
