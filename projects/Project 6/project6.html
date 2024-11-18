@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -41,11 +42,11 @@
           <div class="col-12">
             <div class="row d-flex align-items-center">
               <div class="col-12 col-md-7 text-center text-md-start">
-                <h2 class="heading my-5">
+                <h2 class="heading my-5" data-aos="fade-up">
                   About
                   <span class="heading" style="color: #ff7300">planets</span>
                 </h2>
-                <p class="subheading text-justify scroll-animate">
+                <h5 class="subheading mb-3 text-justify" data-aos="fade-up">
                   The solar system is composed of eight planets: Mercury, Venus,
                   Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. In
                   addition, there are five recognized dwarf planets: Ceres,
@@ -55,7 +56,7 @@
                   planets. The solar system also contains a variety of other
                   celestial objects, including moons, comets, and the Kuiper
                   Belt.
-                </p>
+                </h5>
                 <div class="d-flex justify-content-start">
                   <a
                     href="https://science.nasa.gov/solar-system/planets/"
@@ -63,14 +64,15 @@
                   >
                     <button
                       type="button"
-                      class="btn btn-outline-light w-100 fw-bold p6-btn scroll-animate"
+                      class="btn btn-outline-light w-100 fw-bold p6-btn"
+                      data-aos="fade-up"
                     >
                       Learn More
                     </button>
                   </a>
                 </div>
               </div>
-              <div class="col-12 col-md-5 text-center py-3 scroll-animate">
+              <div class="col-12 col-md-5 text-center py-3" data-aos="fade-up">
                 <img
                   src="img/planet.png"
                   class="img-fluid mx-auto"
@@ -83,7 +85,7 @@
       </div>
 
       <div class="d-flex justify-content-end m-3 m-md-5">
-        <hr class="divider scroll-animate" />
+        <hr class="divider" data-aos="fade-up"/>
       </div>
       
 	  <!-- Solar System -->
@@ -92,19 +94,19 @@
           <div class="col-12">
             <div class="row d-flex align-items-center">
               <div class="col-12 col-md-7 text-center py-3">
-                <div class="iframe-container scroll-animate">
+                <div class="iframe-container" data-aos="fade-up">
                   <iframe
-                    src="https://eyes.nasa.gov/apps/solar-system/#/sun?interactPrompt=true&featured=false&logo=false&search=false"
+                    src="https://eyes.nasa.gov/apps/solar-system/#/sun?shareButton=false"
                     allowfullscreen
                   ></iframe>
                 </div>
               </div>
               <div class="col-12 col-md-5 text-center text-md-start">
-                <h2 class="heading my-5 scroll-animate">
+                <h2 class="heading my-5" data-aos="fade-up">
                   Explore the Solar System in
                   <span class="heading" style="color: #ff7300">3D</span>
                 </h2>
-                <h5 class="subheading text-justify scroll-animate">
+                <h5 class="subheading text-justify" data-aos="fade-up">
                   Take a virtual tour of our solar system! Click on the
                   interactive 3D view to explore the planets, moons, and the Sun
                   up close. It’s an easy way to learn about space in a fun and
@@ -117,7 +119,7 @@
       </div>
 
       <div class="d-flex justify-content-start m-3 m-md-5">
-        <hr class="divider scroll-animate"/>
+        <hr class="divider" data-aos="fade-up"/>
       </div>
       
 	  <!-- Planets -->
@@ -151,5 +153,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </body>
 </html>

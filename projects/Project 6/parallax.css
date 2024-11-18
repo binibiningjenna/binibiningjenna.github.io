@@ -170,8 +170,31 @@
     }
 }
 
-/* Small tablets (max-width: 768px) */
-@media (max-width: 768px) {
+/* Landscape version for small tablets (max-width: 768px) */
+@media (max-width: 950px) and (orientation: landscape) {
+    .keyart,
+    .keyart_layer {
+        height: 100vh; 
+    }
+
+    #keyart-0 {
+        height: 100vh; 
+    }
+
+    .keyart_layer.parallax {
+        background-size: cover; 
+        background-attachment: fixed; 
+    }
+    .heading {
+        font-size: 2rem;
+    }
+    .subheading {
+        font-size: 1rem;
+    }
+}
+
+/* Small tablets (max-width: 769px) */
+@media (max-width: 769px) {
     .keyart,
     .keyart_layer {
         height: 40vh;
@@ -184,6 +207,23 @@
     .keyart_layer.parallax {
         background-size: auto 100%;
         background-attachment: fixed;
+    }
+}
+
+/* Landscape version for small tablets (max-width: 768px) */
+@media (max-width: 768px) and (orientation: landscape) {
+    .keyart,
+    .keyart_layer {
+        height: 100vh; 
+    }
+
+    #keyart-0 {
+        height: 100vh;
+    }
+
+    .keyart_layer.parallax {
+        background-size: cover; 
+        background-attachment: fixed; 
     }
 }
 
@@ -220,4 +260,3 @@
         background-attachment: fixed;
     }
 }
-
