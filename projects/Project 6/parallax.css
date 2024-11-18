@@ -98,7 +98,6 @@
 
     .keyart_layer.parallax {
         background-size: cover;
-        background-attachment: fixed;
     }
 }
 
@@ -115,7 +114,6 @@
 
     .keyart_layer.parallax {
         background-size: auto 100%;
-        background-attachment: fixed;
     }
 }
 
@@ -132,7 +130,6 @@
 
     .keyart_layer.parallax {
         background-size: auto 90%;
-        background-attachment: fixed;
     }
 }
 
@@ -149,7 +146,6 @@
 
     .keyart_layer.parallax {
         background-size: auto 90%;
-        background-attachment: fixed;
     }
 }
 
@@ -166,7 +162,6 @@
 
     .keyart_layer.parallax {
         background-size: auto 100%;
-        background-attachment: fixed;
     }
 }
 
@@ -183,7 +178,6 @@
 
     .keyart_layer.parallax {
         background-size: cover; 
-        background-attachment: fixed; 
     }
     .heading {
         font-size: 2rem;
@@ -206,7 +200,6 @@
 
     .keyart_layer.parallax {
         background-size: auto 100%;
-        background-attachment: fixed;
     }
 }
 
@@ -223,7 +216,6 @@
 
     .keyart_layer.parallax {
         background-size: cover; 
-        background-attachment: fixed; 
     }
 }
 
@@ -240,7 +232,6 @@
 
     .keyart_layer.parallax {
         background-size: auto 80%;
-        background-attachment: fixed;
     }
 }
 
@@ -257,6 +248,5 @@
 
     .keyart_layer.parallax {
         background-size: auto 90%;
-        background-attachment: fixed;
     }
 }
