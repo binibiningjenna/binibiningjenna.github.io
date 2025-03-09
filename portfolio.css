@@ -208,6 +208,12 @@ body {
   cursor: url('images/cursor.png') 16 16, pointer;
 }
 
+.active {
+  background-color: #fce80d !important; 
+  color: #000000 !important;
+  border-color: #fce80d !important; 
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .nav-link {

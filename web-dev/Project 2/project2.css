@@ -1,0 +1,44 @@
+
+.playfair-font {
+  font-family: "Playfair Display", serif; 
+  font-weight: bold;
+}
+
+.Helvetica {
+  font-family:"Liberation Sans", sans-serif;
+}
+.feature {
+  box-shadow: 0 4px 8px rgba(52, 52, 52, 0.2); 
+  transition: transform 0.5s; 
+}
+
+.feature:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+#cuisine .carousel-inner img {
+  
+  object-fit: cover; 
+  width: 100%; 
+  max-height: 700px; 
+  height: auto; 
+}
+
+#park .carousel-inner img {
+  
+  object-fit: cover; 
+  width: 100%; 
+  max-height: 700px; 
+  height: auto; 
+}
+
+
+
+
+
+
