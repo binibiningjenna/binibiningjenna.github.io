@@ -17,7 +17,7 @@ const projects = [
     description: "This website brings the sleek design and powerful features of the MacBook to life. Built with HTML and CSS, it’s a simple yet elegant space that shows how the MacBook can fuel creativity. Whether you're working or creating, this site highlights everything that makes the MacBook stand out.",
     languages: ["HTML", "CSS"],
     website: "web-dev/Project 1/project1.html",
-    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%201"
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/web-dev/Project%201"
   },
   {
     image: "images/project_2.png",
@@ -26,7 +26,7 @@ const projects = [
     description: "Paris, the City of Light, is home to iconic landmarks, vibrant culture, and timeless beauty. This site takes you on a virtual tour of Paris, showcasing its most famous spots and unique charm. Built with HTML, CSS, and Bootstrap, it’s your gateway to the magic of Paris.",
     languages: ["HTML", "CSS"],
     website: "web-dev/Project 2/project2.html",
-    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%202"
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/web-dev/Project%202"
   },
   {
     image: "images/project_3.png",
@@ -35,7 +35,7 @@ const projects = [
     description: "Step into a stunning clothing gallery showcasing the latest fashion trends for women, men, and kids. With HTML, CSS, Bootstrap, and JavaScript, this site brings you the best in style, with a smooth browsing experience. Whether you're into casual wear or formal outfits, there’s something here to inspire your wardrobe.",
     languages: ["HTML", "CSS", "JavaScript"],
     website: "web-dev/Project 3/project3.html",
-    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%203"
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/web-dev/Project%203"
   },
   {
     image: "images/project_4.png",
@@ -44,7 +44,7 @@ const projects = [
     description: "TastyClick is your go-to spot for discovering delicious recipes from around the world. Built with HTML, CSS, JavaScript, API, and Bootstrap, this site makes it easy to find and try new dishes. From breakfast to dinner, you'll find plenty of tasty options to spice up your cooking routine.",
     languages: ["HTML", "CSS", "JavaScript"],
     website: "web-dev/Project 4/project4.html",
-    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%204"
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/web-dev/Project%204"
   },
   {
     image: "images/project_5.png",
@@ -53,7 +53,7 @@ const projects = [
     description: "Coral Wonders takes you on a journey through vibrant coral reefs. With stunning visuals and insights, it highlights the beauty and importance of underwater ecosystems. Built with HTML, CSS, JavaScript, and Bootstrap, it’s designed to engage visitors and share the wonders of coral life.",
     languages: ["HTML", "CSS", "JavaScript"],
     website: "web-dev/Project 5/project5.html",
-    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%205"
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/web-dev/Project%205"
   },
   {
     image: "images/project_6.png",
@@ -62,16 +62,16 @@ const projects = [
     description: "Planet Explorer is your destination for discovering planets and celestial wonders. Built with HTML, CSS, JavaScript, and parallax effects, this site enables interactive exploration of the cosmos. With stunning visuals and smooth animations, dive into the wonders of space and gain insights into the vast universe",
     languages: ["HTML", "CSS", "JavaScript"],
     website: "web-dev/Project 6/project6.html",
-    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/projects/Project%206"
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/web-dev/Project%206"
   },
   {
-    image: "https://www.thinkupthemes.com/blog/wp-content/uploads/2021/09/best-coming-soon-wordpress-themes.jpg",
-    title: "COMING SOON",
+    image: "images/A02.png",
+    title: "FUNZY LAND",
     category: "App Dev",
-    description: "Exciting new web app launching soon—stay tuned!",
-    languages: [],
-    website: "",
-    github: ""
+    description: "Welcome to FunzyLand! A world full of puzzles, action, and hilarious stories. Test your brain, embark on colorful mini adventures, and create wacky stories—fun awaits at every turn! FunzyLand is built using HTML, CSS, JavaScript, and PHP, providing a seamless and interactive experience.",
+    languages: ["HTML", "CSS", "JavaScript", "PHP"],
+    website: "ADET/A02/index.php",
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/ADET/A02"
   }
 ];
 
@@ -79,7 +79,8 @@ const projects = [
 const languageColors = {
   "HTML": "#601f83",
   "CSS": "#731a1a",
-  "JavaScript": "#114c30"
+  "JavaScript": "#114c30",
+  "PHP": "#4C6A92"
 };
 
 // Initialize current project index and filtered projects
@@ -146,6 +147,11 @@ document.getElementById("appDevButton").addEventListener("click", () => filterPr
 // Navigation buttons
 document.getElementById("nextButton").addEventListener("click", nextProject);
 document.getElementById("prevButton").addEventListener("click", prevProject);
+
+// Default
+window.addEventListener("DOMContentLoaded", () => {
+  filterProjects("Web Dev");
+})
 
 updateProject();
 
