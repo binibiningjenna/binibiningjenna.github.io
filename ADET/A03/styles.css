@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --primaryFont: "Montserrat", sans-serif;
+  --text-color-light: #fffbfb;
+  --text-color-dark: #1a1a1a;
+  --primaryColor: #263dc7;
+  --secondaryColor: #281d37;
+  --bgColor: #0d0d0d;
+  --darkColor: #0d0a42f9;
+  --borderColor: #706eff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darkColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color-light); 
+}
+
+body {
+  font-family: var(--primaryFont);
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.5;
+  color: var(--text-color-dark);
+}
+
+h1,h2,h3,h4,h5,h6,span {
+  font-family: var(--primaryFont);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-family: var(--primaryFont);
+  font-weight: bold;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+}
+
+.subheading {
+  font-family: var(--primaryFont);
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+.btn {
+  padding: 8px 15px;
+  background-color: var(--primaryColor);
+  color: var(--text-color-light);
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.hero {
+  position: relative;
+  background-image: url("img/gallery_eight.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #0b0b0bb7; 
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero p {
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 12px 30px;
+  background-color: var(--primaryColor);
+  color: var(--text-color-light);
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: var(--darkColor);
+  transform: scale(1.05);
+}
+
+.cover {
+  background-image: url("img/fitness.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.link:hover {
+  color: var(--text-color-dark);
+}
+
+.icon {
+  font-size: 5rem;
+  margin-left: 1rem;
+  color: var(--text-color-light);
+}
+
+.bg-dark {
+  background-color: var(--bgColor) !important;
+}
+
+.feature-card {
+  background-color: var(--text-color-light);
+  color: var(--text-color-dark);
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  background-color: var(--primaryColor);
+  color: var(--text-color-light) !important;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.card {
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.link {
+  color: var(--primaryColor);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.card .btn {
+  border-radius: 50px;
+}
+
+.gym-rates-section {
+  background-color: var(--bgColor);
+  color: var(--text-color-light);
+}
+
+.rate-box {
+  border: 2px solid var(--borderColor);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rate-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(90, 42, 130, 0.3);
+}
+
+.rate-box.highlight {
+  background-color: var(--bgColor);
+  border-color: var(--borderColor);
+}
+
+.custom-accordion .accordion-item {
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background: var(--bgColor);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.custom-accordion .accordion-item:hover {
+  transform: translateY(-4px);
+}
+
+.custom-accordion .accordion-button {
+  background-color: #2c2c2ccc;
+  color: var(--text-color-light);
+  font-weight: 600;
+  box-shadow: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-accordion .accordion-button:hover {
+  background-color: var(--primaryColor);
+  color: var(--text-color-light);
+}
+
+.custom-accordion .accordion-body {
+  background-color: var(--text-color-light);
+  color: var(--text-color-dark);
+}
+
+.trainer-card {
+  background-color: var(--bgColor);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.trainer-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 5px var(--primaryColor);
+}
+
+.trainer-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.trainer-card:hover .trainer-img {
+  filter: grayscale(0%);
+}
+
+.trainer-overlay {
+  position: absolute;
+  inset: 0;
+  background: #111010d1;
+  color: var(--text-color-light);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.trainer-card:hover .trainer-overlay {
+  opacity: 1;
+}
+
+.trainer-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--primaryColor);
+}
+
+.trainer-role {
+  color: var(--text-color-light);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.trainer-quote {
+  font-style: italic;
+  color: var(--primaryColor);
+}
+
+.gallery {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(0.9);
+  transition: filter 0.5s ease, transform 0.4s ease;
+  border-radius: 8px;
+}
+
+.gallery:hover {
+  filter: grayscale(0%) brightness(1.1) contrast(1.1);
+  transform: scale(1.05);
+}
+
+.gallery-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0px 5px 5px var(--bgColor);
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+}

@@ -72,6 +72,15 @@ const projects = [
     languages: ["HTML", "CSS", "JavaScript", "PHP"],
     website: "ADET/A02/index.php",
     github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/ADET/A02"
+  },
+  {
+    image: "images/A03.png",
+    title: "GymBoost",
+    category: "App Dev",
+    description: "Welcome to GymBoost! Get stronger, healthier, and more confident with us. Join exciting workouts, meet awesome trainers, and enjoy a fun fitness journey. Built with HTML, CSS, and JavaScript for a smooth and easy experience.",
+    languages: ["HTML", "CSS", "JavaScript"],
+    website: "ADET/A03/index.html",
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/ADET/A03"
   }
 ];
 

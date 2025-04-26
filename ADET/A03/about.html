@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GymBoost</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  </head>
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html" style="color: var(--primaryColor); font-size: 1.5rem;">GYMBOOST</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#programs">PROGRAMS</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#pricing">PRICING</a></li>
+            <li class="nav-item"><a class="nav-link" href="#trainers">TRAINERS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">REVIEWS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ</a></li>
+          </ul>
+          <div class="d-flex">
+            <a href="login.html" class="btn">JOIN NOW</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- GYMBOOST -->
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-white">
+            <div class="heading"  data-aos='fade-up'>About GymBoost</div>
+            <p  data-aos='fade-up'>At <strong>GymBoost</strong>, we believe that fitness is more than a routine—it's a lifestyle. Our mission is to empower individuals of all levels to push boundaries, unlock potential, and feel their strongest, both inside and out.</p>
+            <a href="#reviews" class="btn"  data-aos='fade-up'>EXPLORE OUR STORY</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRAINERS SECTION -->
+    <div class="container my-5 py-5" id="trainers">
+      <div class="text-center mb-4 fw-bold subheading" data-aos="fade-up">MEET THE <span style="color: var(--primaryColor)">TRAINERS</span></div>
+      <div class="row g-4 py-5" id="trainer-container"></div>
+      </div>
+    </div>
+
+    <!-- CUSTOMER REVIEWS SECTION -->
+    <div class="py-5" style="background-color: var(--bgColor); color: var(--text-color-light)" id="reviews">
+      <div class="container py-5 text-center">
+        <div class="mb-5 subheading" data-aos="fade-up">What Our Members <span style="color: var(--primaryColor)">Say</span></div>
+        <div class="row g-4" id="review-container"></div>
+      </div>
+    </div>
+
+    <!-- GALLERY SECTION-->
+    <div class="container my-5 py-5">
+      <div class="mb-5 text-center subheading" data-aos='fade-up'>Power in <span style="color: var(--primaryColor)">Progress</span></div>
+      <div class="row g-2">
+        <!-- Box 1: -->
+        <div class="col-12 col-sm-6 col-md-6" data-aos='fade-up'>
+          <div style="height: 150px" class="gallery-container">
+            <img src="img/gallery_one.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 2: -->
+        <div class="col-6 col-sm-3 col-md-3" data-aos='fade-up'>
+          <div style="height: 150px" class="gallery-container">
+            <img src="img/gallery_two.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 3 -->
+        <div class="col-6 col-sm-3 col-md-3" data-aos='fade-up'>
+          <div style="height: 150px" class="gallery-container">
+            <img src="img/gallery_three.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 4 -->
+        <div class="col-6 col-sm-3 col-md-3" data-aos='fade-up'>
+          <div style="height: 150px" class="gallery-container">
+            <img src="img/gallery_four.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 5 -->
+        <div class="col-6 col-sm-3 col-md-3" data-aos='fade-up'>
+          <div style="height: 150px" class="gallery-container">
+            <img src="img/gallery_five.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 6 -->
+        <div class="col-6 col-sm-3 col-md-3" data-aos='fade-up'>
+          <div style="height: 150px" class="gallery-container">
+            <img src="img/gallery_six.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 7 -->
+        <div class="col-6 col-sm-3 col-md-3" data-aos='fade-up'>
+          <div style="height: 150px" class="gallery-container">
+            <img src="img/gallery_seven.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 8 -->
+        <div class="col-12 col-sm-6 col-md-6" data-aos='fade-up'>
+          <div style="height: 180px" class="gallery-container">
+            <img src="img/gallery_eight.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 9 -->
+        <div class="col-4 col-sm-2 col-md-2" data-aos='fade-up'>
+          <div style="height: 180px" class="gallery-container">
+            <img src="img/gallery_nine.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 10 -->
+        <div class="col-4 col-sm-2 col-md-2" data-aos='fade-up'>
+          <div style="height: 180px" class="gallery-container">
+            <img src="img/gallery_ten.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+        <!-- Box 11 -->
+        <div class="col-4 col-sm-2 col-md-2" data-aos='fade-up'>
+          <div style="height: 180px" class="gallery-container">
+            <img src="img/gallery_eleven.jpg" alt="Workout Image" class="gallery" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <div class="bg-dark" id="FAQ">
+      <div class="container p-5">
+        <div class="py-5 text-center subheading" data-aos='fade-up' style="color: var(--text-color-light)"><span style="color:var(--primaryColor)">Frequently</span> Asked Questions</div>
+        <div class="accordion custom-accordion" id="gymFaq">
+          <!-- Question 1 -->
+          <div class="accordion-item" data-aos='fade-up'>
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">What are your opening hours?</button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#gymFaq">
+              <div class="accordion-body">We’re open daily from <strong>6:00 AM to 10:00 PM</strong> — even on holidays. Perfect for early birds and night owls!</div>
+            </div>
+          </div>
+          <!-- Question 2 -->
+          <div class="accordion-item" data-aos='fade-up'>
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">How much does it cost?</button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#gymFaq">
+              <div class="accordion-body">Prices start at just <strong>₱60/session</strong> — with affordable monthly and annual plans. All memberships include <span style="color: #9b59b6">free coaching</span>!</div>
+            </div>
+          </div>
+          <!-- Question 3 -->
+          <div class="accordion-item" data-aos='fade-up'>
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Where are you located?</button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#gymFaq">
+              <div class="accordion-body">Find us at <strong>123 Wellness St., FitCity</strong>, beside the plaza. We’ve got easy access and lots of parking!</div>
+            </div>
+          </div>
+          <!-- Question 4 -->
+          <div class="accordion-item" data-aos='fade-up'>
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">Do you offer personal training?</button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#gymFaq">
+              <div class="accordion-body">
+                Yes! Our certified coaches offer
+                <strong>free guidance</strong> with every membership. Book 1-on-1 training for a custom fitness plan!
+              </div>
+            </div>
+          </div>
+          <!-- Question 5 -->
+          <div class="accordion-item" data-aos='fade-up'>
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">Do you offer classes or group workouts?</button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#gymFaq">
+              <div class="accordion-body">
+                Absolutely! We have daily group sessions like
+                <strong>HIIT, Zumba, Strength Training</strong>, and <strong>Yoga</strong> — all included in your membership. Perfect for staying motivated and meeting new gym buddies!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="text-light px-4" style="background-color: var(--bgColor); color: var(--text-color-light)">
+      <div class="container">
+        <div class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5 style="color: var(--primaryColor)">GYMBOOST</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="index.html" class="nav-link p-0 text-light">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="index.html#programs" class="nav-link p-0 text-light">Programs</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="index.html#pricing" class="nav-link p-0 text-light">Pricing</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="about.html" class="nav-link p-0 text-light">About</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5 style="color: var(--primaryColor)">SERVICES</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-light">Personal Training Sessions</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-light">Strength Training</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-light">Cardio Training</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5 style="color: var(--primaryColor)">CONTACTS</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-light">FACEBOOK</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-light">INSTAGRAM</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-light">TWITTER</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-light">YOUTUBE</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5 style="color: var(--primaryColor)">Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="email" class="form-control" placeholder="Email address" fdprocessedid="o159k5" />
+                  <button class="btn" type="button" fdprocessedid="vtyuu">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-secondary">
+            <p class="mb-0 text-secondary">© 2025 GymBoost. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="text-light fs-5" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="ms-3">
+                <a class="text-light fs-5" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Customer Review
+      var reviews = [
+        ["GymBoost changed my mindset and gave me real results fast.", "— Daniel R.", "Transformed in 6 months"],
+        ["Now I actually enjoy workouts, thanks to the awesome vibe!", "— Ellie J.", "Built a consistent routine"],
+        ["The trainers lift you up—physically and mentally. Incredible team!", "— Chris T.", "Energy + Confidence Boost"],
+        ["Came for fitness, stayed for the passion and community.", "— Jamie L.", "Rediscovered the joy of movement"],
+        ["This place keeps me going. It’s more than just workouts.", "— Renee K.", "ound a community, not just a gym"],
+        ["From day one, I felt supported and motivated to grow.", "— Leo M.", "Routine turned into lifestyle"],
+      ];
+
+      var html = "";
+      for (var i = 0; i < reviews.length; i++) {
+        html += 
+                "<div class='col-md-4' data-aos='fade-up'>" +
+                  "<div class='card rate-box highlight h-100 text-start' style='border: 2px solid var(--primaryColor); background-color: #1a1a1a'>" +
+                    "<div class='card-body'>" +
+                      "<p class='card-text fst-italic text-white'>\"" + reviews[i][0] + "\"</p>" +
+                      "<h5 class='card-title mt-4' style='color: var(--primaryColor)'>" + reviews[i][1] + "</h5>" +
+                      "<p class='card-subtitle text-white-50'>" + reviews[i][2] + "</p>" +
+                    "</div>" +
+                  "</div>" +
+                "</div>";
+      }
+      document.getElementById("review-container").innerHTML = html;
+
+      // Trainers
+      var trainer = [
+        ["trainer_one.jpg", "Liam Flex", "Strength Coach", "Deadlifts fix everything."],
+        ["trainer_two.jpg","Yshimae Reed", "Mobility & Stretching", "Flexibility is freedom."],
+        ["trainer_three.jpg","Zoe Blaze", "HIIT Specialist", "Train like you mean it."]
+      ];
+
+      var html = "";
+      for (var i = 0; i < trainer.length; i++) {
+        html += "<div class='col-md-4' data-aos='fade-up'>" +
+          "<div class='trainer-card'>" +
+            "<img src='img/" + trainer[i][0] + "' class='trainer-img' />" +
+            "<div class='trainer-overlay'>" +
+              "<div class='trainer-name'>" + trainer[i][1] + "</div>" +
+              "<div class='trainer-role'>" + trainer[i][2] + "</div>" +
+              "<div class='trainer-quote'>\"" + trainer[i][3] + "\"</div>" +
+            "</div>" +
+          "</div>" +
+        "</div>";
+      }
+      document.getElementById("trainer-container").innerHTML = html;
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 2000,
+          once: true,
+          offset: 200
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </body>
+</html>
