@@ -81,6 +81,15 @@ const projects = [
     languages: ["HTML", "CSS", "JavaScript"],
     website: "ADET/A03/index.html",
     github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/ADET/A03"
+  },
+  {
+    image: "images/A04.png",
+    title: "Booklet",
+    category: "App Dev",
+    description: "Welcome to Booklet POS! A Point of Sale system designed to manage your booklet collection. This platform allows you to easily browse and manage booklets with features built using HTML, CSS, and JavaScript for a smooth and efficient experience.",
+    languages: ["HTML", "CSS", "JavaScript"],
+    website: "ADET/A04/index.html",
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/ADET/A04"
   }
 ];
 

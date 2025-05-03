@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Booklet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row h-100 g-0">
+        <!-- Left Sidebar -->
+        <div class="col-md-3 col-12 left-sidebar overflow-scroll">
+          <div class="d-flex flex-md-column flex-row h-100 gap-3 p-3" id="categories"></div>
+        </div>
+
+        <!-- Center Content -->
+        <div class="col-md-6 col-12 p-3 center-content overflow-scroll">
+          <div class="heading my-4 text-center"><i class="fas fa-book-open me-2" style="color: var(--primary-color)"></i> Welcome to Our <span style="color: var(--primary-color)">Booklet Store!</span></div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" id="maincontainer"></div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="col-md-3 col-12 p-3 right-sidebar overflow-scroll">
+          <div class="d-flex flex-column h-100">
+            <div class="mb-3 border-bottom pb-2 subheading">Order Summary</div>
+            <div class="flex-grow-1" id="receipt"></div>
+            <div class="border-top pt-3">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="fw-bold">Total:</span>
+                <span class="fw-bold" id="totalValue">₱0.00</span>
+              </div>
+              <button disabled onclick="checkOut()" class="cart-btn w-100 heading" id="checkoutBtn"><i class="fas fa-credit-card me-2 p-2"></i> Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
