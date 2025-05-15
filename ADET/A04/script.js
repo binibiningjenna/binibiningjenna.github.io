@@ -449,15 +449,35 @@ function loadBooks(categoryIndex) {
     });
 }
 
+function findExistingItem(code) {
+    var items = document.querySelectorAll("#receipt > div");
+    for (var i = 0; i < items.length; i++) {
+        if (items[i].querySelector(".h6").textContent.trim() === code) {
+            return items[i].id;
+        }
+    }
+    return null;
+}
+
 function addToReceipt(price, code) {
     var receiptContainer = document.getElementById("receipt");
+    
     if (receiptContainer.innerHTML.includes("Thank you for shopping with us!")) {
         receiptContainer.innerHTML = "";
     }
+
+    var existingId = findExistingItem(code);
+    if (existingId) {
+        updateQuantity(existingId, 1, price);
+        return;
+    }
+
     total = parseFloat(total) + parseFloat(price);
 
     var totalValueElement = document.getElementById("totalValue");
-    totalValueElement.innerHTML = total.toFixed(2);
+    if (totalValueElement) {
+        totalValueElement.innerHTML = total.toFixed(2);
+    }
 
     var itemId = 'cart-item-' + Date.now();
 
@@ -484,7 +504,11 @@ function addToReceipt(price, code) {
                     </button>
                 </div>
             </div>`;
-    document.getElementById("checkoutBtn").disabled = false;
+    
+    var checkoutBtn = document.getElementById("checkoutBtn");
+    if (checkoutBtn) {
+        checkoutBtn.disabled = false;
+    }
 }
 
 function removeItem(itemId, price) {
