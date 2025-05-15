@@ -3,7 +3,7 @@ var products = [];
 var total = 0;
 
 const getAllCategories = async () => {
-    fetch('http://localhost/Academic/binibiningjenna.github.io/ADET/A06_BE/categories.php')
+    fetch('http://localhost/Academic/binibiningjenna.github.io/ADET/A06/BE/categories.php')
         .then(response => response.json())
         .then(data => {
             categories = data;
@@ -20,7 +20,7 @@ const getAllProducts = async (category_id) => {
         category_id: category_id
     };
 
-    fetch('http://localhost/Academic/binibiningjenna.github.io/ADET/A06_BE/products.php', {
+    fetch('http://localhost/Academic/binibiningjenna.github.io/ADET/A06/BE/products.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
