@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --heading-font: "League Spartan", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --color-dark: #1a1a1a;
+  --color-light: #f2efeb;
+  --primary-color: #264653;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--color-light);
+  font-size: 1rem;
+  font-weight: 450;
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+
+.heading {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+
+.subheading {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark);
+}
+
+.cart-btn {
+  padding: 0.2rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--color-light);
+  font-size: 0.9rem;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: transparent;
+  color: var(--color-dark);
+  border-color: var(--primary-color);
+}
+
+.card-btn {
+  background-color: transparent;
+  color: var(--color-dark);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--color-light);
+  border-color: var(--primary-color);
+}
+
+.container-fluid {
+  min-height: 100vh;
+}
+
+.left-sidebar,
+.center-content,
+.right-sidebar {
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
+  .container-fluid {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .left-sidebar,
+  .center-content,
+  .right-sidebar {
+    height: auto !important;
+  }
+
+  .left-sidebar,
+  .center-content,
+  .right-sidebar {
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+
+  .left-sidebar .category-card {
+    min-width: 80px;
+    padding: 0.5rem !important;
+  }
+}
