@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JMARPIX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="container photobooth-container">
+      <div class="row justify-content-center align-items-start py-5 gx-4">
+        <div class="col-12 col-md-7 col-lg-6">
+          <!-- Camera -->
+          <video id="video" autoplay playsinline></video>
+
+          <!-- Filter -->
+          <div class="controls-container">
+            <select id="filter" class="dropdown form-select form-select-sm mt-2">
+              <option value="none">No Filter</option>
+              <option value="grayscale(100%)">Grayscale</option>
+              <option value="sepia(90%)">Sepia</option>
+              <option value="contrast(150%)">Contrast</option>
+              <option value="brightness(130%)">Brightness</option>
+            </select>
+            <select id="timer" class="dropdown form-select form-select-sm mt-2">
+              <option value="0">No Timer</option>
+              <option value="3">3 seconds</option>
+              <option value="10">10 seconds</option>
+            </select>
+
+            <!-- Buttons and countdown -->
+            <button id="snap-btn" class="btn mt-2" onclick="startCountdown()"><i class="bi bi-camera"></i> Take Snapshot</button>
+            <button id="download-btn" class="btn mt-2" onclick="downloadCard()"><i class="bi bi-download"></i> Download Card</button>
+            <button id="reshoot-btn" class="btn mt-2" style="display: none" onclick="reshootPhotos()"><i class="bi bi-arrow-repeat"></i> Reshoot</button>
+            <div id="countdown-display" class="mt-2 fw-bold text-danger"></div>
+          </div>
+        </div>
+
+        <!-- Photo card -->
+        <div class="col-12 col-md-5 col-lg-4 mt-4 mt-md-0">
+          <div class="photo-card-container">
+            <h3>Photo Card</h3>
+            <div id="photocard">
+              <img class="photo-slot" src="" alt="Photo 1" />
+              <img class="photo-slot" src="" alt="Photo 2" />
+              <img class="photo-slot" src="" alt="Photo 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/script.js"></script>
+  </body>
+</html>

@@ -90,6 +90,15 @@ const projects = [
     languages: ["HTML", "CSS", "JavaScript"],
     website: "ADET/A04/index.html",
     github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/ADET/A04"
+  },
+  {
+    image: "images/A07.png",
+    title: "JMARPIX",
+    category: "App Dev",
+    description: "JMARPIX is a dynamic photobooth platform designed to capture, store, and share your most memorable moments effortlessly. With seamless integration of HTML, CSS, JavaScript, and Bootstrap, it ensures a smooth and delightful experience whether you're snapping fun selfies or recording special events.",
+    languages: ["HTML", "CSS", "JavaScript"],
+    website: "ADET/A07/index.html",
+    github: "https://github.com/binibiningjenna/binibiningjenna.github.io/tree/main/ADET/A07"
   }
 ];
 
